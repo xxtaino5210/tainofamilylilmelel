@@ -9,7 +9,6 @@ const fetchVideoInfo = require("youtube-info");
 const prefix = botSettings.prefix;
 const ytApiKey = botSettings.ytApiKey;
 const youtube = new YouTube(ytApiKey);
-const Discord = require('discord.js');
 const client = new Discord.Client();
 const bot = new Discord.Client({
 	disableEveryone: true
