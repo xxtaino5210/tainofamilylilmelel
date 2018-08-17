@@ -27,7 +27,7 @@ client.user.setGame(`working on`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-\\\\\\\\
+
 client.on('message', msg => {
   if (msg.content === 'مرحبا') {
    
@@ -35,7 +35,7 @@ client.on('message', msg => {
     msg.reply('**مرحبتين**');
   }
 });
-\\\\\\\
+
 clint.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
@@ -64,5 +64,4 @@ if (command == "tweet") {
 
 
 });
-\\\\\\\
 client.login(process.env.BOT_TOKEN);
