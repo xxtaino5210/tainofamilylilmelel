@@ -8,7 +8,7 @@ const getYouTubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const prefix = '$'
 
-client.on('ready', () => {
+
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`working on`,"http://twitch.tv/S-F")
   console.log('')
