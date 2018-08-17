@@ -28,18 +28,12 @@ client.user.setGame(`working on`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-client.on('message', message => {
-if (command == "tweet") {
-    let say = new Discord.RichEmbed()
-  .setThumbnail(message.author.avatarURL)
-  .setAuthor(message.author.username)
-    .setDescription(args.join("  "))
-    .setColor(0x00AE86)
-    message.channel.sendEmbed(say);
-    message.delete();
+client.on('message', msg => {
+  if (msg.content === 'مرحبا') {
+   
+       
+    msg.reply('**مرحبتين**');
   }
-
-
 });
 
 client.login(process.env.BOT_TOKEN);
