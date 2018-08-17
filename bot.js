@@ -28,6 +28,7 @@ client.user.setGame(`working on`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+client.on('message', message => {
 if (command == "tweet") {
     let say = new Discord.RichEmbed()
   .setThumbnail(message.author.avatarURL)
