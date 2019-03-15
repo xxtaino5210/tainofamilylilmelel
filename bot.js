@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
  
 client.on('message', message => {
-   let emoji = client.guilds.get("472485229571997716").emojis.find(r => r.name === "5_"); //كود تعريف المتغير emoji
+   let emoji = client.guilds.get("472485229571997716").emojis.find(r => r.name === "3_"); //كود تعريف المتغير emoji
  
     if(message.content === 'sendemoji'){ //تحقق اذا الرساله هي sebdemji
    message.channel.send(`${emoji}`)//يرسل المتغير emoji 
